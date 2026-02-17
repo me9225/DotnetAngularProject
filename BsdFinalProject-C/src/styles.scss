@@ -1,0 +1,240 @@
+/* =================================================
+   PAGE BACKGROUND
+================================================= */
+
+:host {
+  display: block;
+  background: linear-gradient(135deg, #111827, #1e293b);
+  padding: 50px 0;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+/* =================================================
+   DATAVIEW WRAPPER
+================================================= */
+
+.p-dataview,
+.p-dataview-content,
+.card {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* =================================================
+   HEADER LAYOUT
+================================================= */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* =================================================
+   GRID / LIST TOGGLE BUTTONS
+================================================= */
+
+.view-toggle {
+  display: flex;
+  gap: 6px;
+  background: #1e1b2e;
+  border: 1px solid #2d2345;
+  border-radius: 14px;
+  padding: 6px;
+}
+
+.custom-view-btn {
+  background: transparent;
+  border: none;
+  color: #c4b5fd;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-size: 16px;
+}
+
+.custom-view-btn:hover {
+  background: rgba(168, 85, 247, 0.15);
+  color: #ffffff;
+}
+
+.custom-view-btn.active {
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  color: #ffffff;
+}
+
+/* =================================================
+   GRID CARD
+================================================= */
+
+.card-fixed-height {
+  background: #1e1b2e;
+  border: 1px solid #2d2345;
+  border-radius: 18px;
+  padding: 20px;
+  min-height: 380px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.3s ease;
+}
+
+.card-fixed-height:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(168, 85, 247, 0.25);
+}
+
+/* תוכן */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =================================================
+   LIST VIEW
+================================================= */
+
+.list-item-fixed {
+  display: flex;
+  gap: 20px;
+  background: #1e1b2e;
+  border: 1px solid #2d2345;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.list-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.list-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =================================================
+   IMAGES
+================================================= */
+
+.fixed-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* =================================================
+   TEXT STYLES
+================================================= */
+
+.text-lg,
+.text-xl {
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.text-sm {
+  color: #cbd5e1;
+  margin-bottom: 4px;
+}
+
+.text-primary {
+  color: #c084fc;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* =================================================
+   ACTION BUTTONS
+================================================= */
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* כפתורי עדכון/מחיקה */
+.p-button {
+  background: linear-gradient(90deg, #a855f7, #ec4899) !important;
+  border: none !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+}
+
+/* כפתור משני (נקה סינונים / הוסף מתנה) */
+.p-button.p-button-secondary {
+  background: transparent !important;
+  border: 1px solid #a855f7 !important;
+  color: #a855f7 !important;
+  border-radius: 25px !important;
+}
+
+.p-button.p-button-secondary:hover {
+  background: rgba(168, 85, 247, 0.1) !important;
+}
+/* =========================================
+   FORCE OUTLINE ICON BUTTONS – HARD OVERRIDE
+========================================= */
+
+.p-button.icon-btn {
+  background: transparent !important;
+  border: 2px solid currentColor !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+  width: 38px !important;
+  height: 38px !important;
+  padding: 0 !important;
+}
+
+/* מבטל מילוי פנימי של Prime */
+.p-button.icon-btn .p-button-label {
+  display: none !important;
+}
+
+/* שלא יהפוך למלא ב-hover */
+.p-button.icon-btn:hover {
+  background: rgba(255,255,255,0.05) !important;
+}
+
+/* צבעים */
+.edit-outline { color: #a855f7 !important; }
+.save-outline { color: #3b82f6 !important; }
+.cancel-outline { color: #64748b !important; }
+.delete-outline { color: #ef4444 !important; }
+.p-button.icon-btn {
+  background: transparent !important;
+  border: 2px solid currentColor !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.p-button.icon-btn:hover {
+  background: rgba(255,255,255,0.06) !important;
+}
+
+/* צבעים */
+.save-outline { color: #ec4899 !important; }      /* ורוד */
+.cancel-outline { color: #94a3b8 !important; }    /* אפור */
+.edit-outline { color: #a855f7 !important; }
+.delete-outline { color: #ef4444 !important; }

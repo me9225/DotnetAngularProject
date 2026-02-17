@@ -1,0 +1,625 @@
+/* =================================================
+   BACKGROUND – תואם קומפוננטת הבית
+================================================= */
+
+:host {
+  display: block;
+  background: linear-gradient(135deg, #111827, #1e293b);
+  padding: 50px 0;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+/* =================================================
+   FILTER PANEL
+================================================= */
+
+::ng-deep .p-panel {
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  background: linear-gradient(135deg, #1e293b, #273549) !important;
+  border-radius: 22px !important;
+  border: none !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
+  padding: 30px !important;
+}
+
+/* פס עליון */
+::ng-deep .p-panel::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa);
+  border-radius: 20px 20px 0 0;
+  margin: -30px -30px 25px -30px;
+}
+
+/* כותרת */
+::ng-deep .p-panel-header {
+  background: transparent !important;
+  border: none !important;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =================================================
+   FILTER LAYOUT
+================================================= */
+
+.grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: flex-end;
+}
+
+/* חיפוש + תורם */
+.flex-col {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+}
+
+/* כפתור בשורה נפרדת */
+.grid > div:last-child {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* =================================================
+   LABELS – ללא רווח מיותר
+================================================= */
+
+.flex-col label {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2 !important;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f8fafc !important;
+  text-align: right;
+}
+
+/* ביטול margin של Tailwind אם קיים */
+.flex-col .block {
+  margin: 0 !important;
+}
+
+/* =================================================
+   INPUTS – גובה אחיד וקונטרסט תקין
+================================================= */
+
+.p-inputtext,
+::ng-deep .p-select {
+  width: 100%;
+  height: 44px !important;
+  background: #111827 !important;
+  border: 1px solid #334155 !important;
+  border-radius: 14px !important;
+  color: #f1f5f9 !important;
+  padding: 0 14px !important;
+  display: flex;
+  align-items: center;
+  transition: 0.25s ease;
+  margin: 0 !important;
+}
+
+/* placeholder */
+.p-inputtext::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
+
+/* focus */
+.p-inputtext:focus {
+  border-color: #22d3ee !important;
+  box-shadow: 0 0 0 3px rgba(34,211,238,0.2) !important;
+}
+
+/* dropdown label */
+::ng-deep .p-select-label {
+  display: flex;
+  align-items: center;
+  height: 44px !important;
+  color: #f1f5f9 !important;
+}
+
+/* dropdown icon */
+::ng-deep .p-select-dropdown {
+  display: flex;
+  align-items: center;
+  height: 44px !important;
+}
+
+/* wrapper של input עם icon */
+.p-input-icon-right {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: normal !important;
+}
+
+/* אייקון חיפוש */
+.p-input-icon-right i {
+  color: #22d3ee !important;
+}
+
+/* RTL */
+input,
+.p-select {
+  direction: rtl;
+  text-align: right;
+}
+
+/* =================================================
+   BUTTONS
+================================================= */
+
+.p-button-success {
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+  border: none !important;
+  color: #0f172a !important;
+  border-radius: 25px !important;
+}
+
+.p-button-secondary {
+  background: transparent !important;
+  border: 1px solid #22d3ee !important;
+  color: #22d3ee !important;
+  border-radius: 25px !important;
+}
+
+.p-button-secondary:hover {
+  background: rgba(34,211,238,0.1) !important;
+}
+
+/* =================================================
+   GIFTS GRID / LIST
+================================================= */
+
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent !important;
+}
+
+.card-fixed-height,
+.list-item-fixed {
+  background: #1e293b !important;
+  border-radius: 20px !important;
+  border: none !important;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.6) !important;
+  transition: 0.3s ease;
+  color: #e2e8f0 !important;
+}
+
+.card-fixed-height:hover,
+.list-item-fixed:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(34,211,238,0.25) !important;
+}
+
+/* כותרות */
+.text-xl,
+.text-lg,
+.font-bold {
+  color: #f8fafc !important;
+}
+
+/* טקסט משני */
+.text-surface-500,
+.text-surface-600 {
+  color: #cbd5e1 !important;
+}
+
+/* מחיר */
+.text-primary {
+  color: #22d3ee !important;
+}
+
+/* תמונות */
+.fixed-img {
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* =================================================
+   PAGINATOR
+================================================= */
+
+::ng-deep .p-paginator {
+  background: transparent !important;
+  border: none !important;
+  justify-content: center !important;
+  color: #e2e8f0 !important;
+}
+/* =========================================
+   REMOVE LAST EXTRA PIXELS OF SPACE
+========================================= */
+
+/* לבטל כל margin על wrapper */
+.p-input-icon-right,
+::ng-deep .p-select,
+::ng-deep .p-select .p-select-label,
+::ng-deep .p-inputwrapper {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* לוודא שה-label לא דוחף כלום */
+.flex-col label {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* להכריח שה-input יישב צמוד */
+.flex-col > * {
+  margin-top: 0 !important;
+}
+
+/* ביטול line-height שמייצר רווח ויזואלי */
+.flex-col {
+  line-height: normal !important;
+}
+/* =====================================
+   DONOR SELECT – סגול ורוד אלגנטי
+===================================== */
+
+/* התיבה עצמה */
+::ng-deep #donorSelect.p-select {
+  background: #1e1b2e !important; /* כהה נוטה לסגול */
+  border: 1px solid #7c3aed !important; /* סגול */
+  border-radius: 14px !important;
+  color: #f5f3ff !important;
+}
+
+/* טקסט בתוך התיבה */
+::ng-deep #donorSelect .p-select-label {
+  color: #f5f3ff !important;
+}
+
+/* אייקון החץ */
+::ng-deep #donorSelect .p-select-dropdown {
+  color: #ec4899 !important; /* ורוד */
+}
+
+/* פאנל הרשימה הנפתחת */
+::ng-deep .p-select-panel {
+  background: #1e1b2e !important;
+  border: 1px solid #7c3aed !important;
+}
+
+/* כל פריט ברשימה */
+::ng-deep .p-select-item {
+  color: #f5f3ff !important;
+  padding: 10px 14px !important;
+  transition: 0.2s ease;
+}
+
+/* Hover */
+::ng-deep .p-select-item:hover {
+  background: rgba(236, 72, 153, 0.15) !important; /* ורוד שקוף */
+  color: #ffffff !important;
+}
+
+/* פריט נבחר */
+::ng-deep .p-select-item.p-highlight {
+  background: linear-gradient(90deg, #7c3aed, #ec4899) !important;
+  color: white !important;
+}
+/* =====================================
+   SEARCH INPUT – סגול ורוד תואם תורם
+===================================== */
+
+/* מעטפת האייקון */
+.p-input-icon-right {
+  width: 100%;
+}
+
+/* השדה עצמו */
+#giftName.p-inputtext {
+  background: #1e1b2e !important; /* כהה נוטה לסגול */
+  border: 1px solid #7c3aed !important; /* סגול */
+  border-radius: 14px !important;
+  color: #f5f3ff !important;
+  height: 44px !important;
+}
+
+/* placeholder */
+#giftName.p-inputtext::placeholder {
+  color: #c4b5fd !important; /* סגול בהיר */
+  opacity: 1;
+}
+
+/* focus */
+#giftName.p-inputtext:focus {
+  border-color: #ec4899 !important; /* ורוד */
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.25) !important;
+}
+
+/* אייקון חיפוש */
+.p-input-icon-right i {
+  color: #ec4899 !important;
+}
+
+/* =====================================
+   UNIFIED TEXT COLOR – חיפוש + תורם
+===================================== */
+
+/* טקסט בשדה חיפוש */
+#giftName.p-inputtext {
+  color: #f5f3ff !important;
+}
+
+/* placeholder חיפוש */
+#giftName.p-inputtext::placeholder {
+  color: #c4b5fd !important;
+  opacity: 1;
+}
+
+/* טקסט בתיבת תורם */
+::ng-deep #donorSelect .p-select-label {
+  color: #f5f3ff !important;
+}
+
+/* placeholder של התורם */
+::ng-deep #donorSelect .p-placeholder {
+  color: #c4b5fd !important;
+}
+
+/* טקסט בתוך הרשימה הנפתחת */
+::ng-deep .p-select-item {
+  color: #f5f3ff !important;
+}
+/* =====================================
+   DONOR DROPDOWN PANEL – ורוד סגול עדין
+===================================== */
+
+/* הפאנל שנפתח */
+::ng-deep .p-select-panel {
+  background: linear-gradient(135deg, #221c35, #2a1f45) !important;
+  border: 1px solid #a855f7 !important; /* סגול ורדרד */
+  border-radius: 14px !important;
+  box-shadow: 0 15px 35px rgba(168, 85, 247, 0.25) !important;
+}
+
+/* כל פריט */
+::ng-deep .p-select-item {
+  color: #f5f3ff !important;
+  padding: 10px 14px !important;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+/* hover */
+::ng-deep .p-select-item:hover {
+  background: rgba(236, 72, 153, 0.18) !important; /* ורוד עדין */
+  color: #ffffff !important;
+}
+
+/* פריט נבחר */
+::ng-deep .p-select-item.p-highlight {
+  background: linear-gradient(90deg, #a855f7, #ec4899) !important;
+  color: white !important;
+}
+
+/* אזור גלילה */
+::ng-deep .p-select-items-wrapper {
+  padding: 6px;
+}
+/* =========================================
+   GIFTS AREA – NORMALIZED CLEAN STYLE
+========================================= */
+
+/* ביטול צבעים לבן / ירוק של Prime */
+.p-button-success,
+.p-button-danger {
+  background: #7c3aed !important;   /* סגול אחיד */
+  border: none !important;
+  color: #ffffff !important;
+}
+
+/* כרטיסים במצב GRID */
+.card-fixed-height {
+  background: #1e1b2e !important;     /* כהה אחיד */
+  border-radius: 16px !important;
+  border: 1px solid #2d2345 !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+
+  height: 100%;
+  min-height: 380px;                 /* גובה אחיד */
+  padding: 20px !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* מצב רשימה */
+.list-item-fixed {
+  background: #1e1b2e !important;
+  border-radius: 16px !important;
+  border: 1px solid #2d2345 !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35) !important;
+
+  padding: 20px !important;
+  margin-bottom: 16px !important;
+}
+
+/* ביטול קו הפרדה של Prime */
+.surface-border {
+  border-color: transparent !important;
+}
+
+/* תמונות בגודל אחיד */
+.fixed-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* כותרת מתנה */
+.text-lg,
+.text-xl {
+  margin-bottom: 6px !important;
+  line-height: 1.3;
+}
+
+/* טקסט משני */
+.text-sm {
+  margin-bottom: 4px !important;
+  line-height: 1.4;
+}
+
+/* מחיר */
+.text-primary {
+  color: #c084fc !important;  /* סגול רך במקום ירוק */
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+}
+
+/* ריווח בין כפתורים */
+.grid.grid-cols-2 {
+  gap: 8px !important;
+}
+
+/* ביטול רווחים גדולים מ-Tailwind */
+.mt-10 {
+  margin-top: 16px !important;
+}
+
+.mt-4 {
+  margin-top: 12px !important;
+}
+
+/* ריווח פנימי מסודר */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+/* =========================================
+   REMOVE WHITE BACKGROUND – DATAVIEW
+========================================= */
+
+/* הרקע הראשי של DataView */
+.p-dataview {
+  background: transparent !important;
+}
+
+/* תוכן פנימי */
+.p-dataview-content {
+  background: transparent !important;
+}
+
+/* ביטול רקע לבן מה-card */
+.card {
+  background: transparent !important;
+}
+
+/* =========================================
+   FIX LIST / GRID BUTTON STYLE
+========================================= */
+
+.p-selectbutton {
+  background: #1e1b2e !important;
+  border-radius: 14px !important;
+  padding: 4px !important;
+}
+
+/* כל כפתור בפנים */
+.p-selectbutton .p-button {
+  background: transparent !important;
+  border: none !important;
+  color: #c4b5fd !important;
+  border-radius: 10px !important;
+  transition: 0.2s ease;
+}
+
+/* hover */
+.p-selectbutton .p-button:hover {
+  background: rgba(168, 85, 247, 0.15) !important;
+  color: #ffffff !important;
+}
+
+/* כפתור פעיל */
+.p-selectbutton .p-button.p-highlight {
+  background: linear-gradient(90deg, #a855f7, #ec4899) !important;
+  color: white !important;
+}
+/* ביטול הרקע הלבן של ה-DataView header */
+.p-dataview-header {
+  background: transparent !important;
+  border: none !important;
+}
+.p-dataview .p-dataview-header {
+  background: transparent !important;
+}
+/* =========================================
+   REMOVE WHITE BACKGROUND – DATAVIEW HEADER
+========================================= */
+
+/* הרקע של ה-header עצמו */
+.p-dataview-header {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* אם Prime עוטף בעוד שכבה */
+.p-dataview .p-dataview-header {
+  background: transparent !important;
+}
+
+/* ביטול רקע לבן מהקומפוננטה עצמה */
+.p-dataview {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ביטול רקע מתוכן פנימי */
+.p-dataview-content {
+  background: transparent !important;
+}
+/* =========================================
+   HARD RESET – REMOVE ALL WHITE WRAPPERS
+========================================= */
+
+/* DataView וכל העטיפות שלו */
+.p-dataview,
+.p-dataview-content,
+.p-dataview-header,
+.p-dataview-footer {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* אם זה עטוף בתוך card של Prime */
+.p-card,
+.surface-card,
+.card {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* לפעמים Prime מוסיף surface-0 */
+.surface-0 {
+  background: transparent !important;
+}
+
+/* אם Tailwind שם bg-white */
+.bg-white {
+  background: transparent !important;
+}
+::ng-deep .p-dataview-header {
+  background: transparent !important;
+}

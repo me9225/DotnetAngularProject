@@ -1,0 +1,14 @@
+<div class="card flex flex-wrap justify-center items-end gap-4">
+<h1>!!ברוך הבא</h1>
+<p-floatlabel variant="on">
+        <input pInputText id="on_label" [(ngModel)]="email" autocomplete="off" />
+        <label for="on_label">הכנס כתובת מייל</label>
+    </p-floatlabel>
+    <p-floatlabel variant="on">
+        <input pInputText id="on_label" [(ngModel)]="password" autocomplete="off" />
+        <label for="on_label">הכנס סיסמה</label>
+    </p-floatlabel>
+    <button (click)="goToRegister()" class="text-blue">עדיין אין לך חשבון? הירשם</button>
+
+    <button (click)="login()">התחבר</button>
+</div>

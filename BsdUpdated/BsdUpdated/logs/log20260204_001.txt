@@ -1,0 +1,363 @@
+2026-02-04 15:28:25.048 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-04 15:28:25.382 +02:00 [DBG] Hosting starting
+2026-02-04 15:28:25.446 +02:00 [INF] User profile is available. Using 'C:\Users\329114318\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-04 15:28:25.484 +02:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2026-02-04 15:28:25.487 +02:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2026-02-04 15:28:25.494 +02:00 [INF] Creating key {31b3efd9-f5ba-4fd2-8a60-86a832ca0722} with creation date 2026-02-04 13:28:25Z, activation date 2026-02-04 13:28:25Z, and expiration date 2026-05-05 13:28:25Z.
+2026-02-04 15:28:25.516 +02:00 [DBG] Descriptor deserializer type for key {31b3efd9-f5ba-4fd2-8a60-86a832ca0722} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2026-02-04 15:28:25.527 +02:00 [DBG] No key escrow sink found. Not writing key {31b3efd9-f5ba-4fd2-8a60-86a832ca0722} to escrow.
+2026-02-04 15:28:25.534 +02:00 [DBG] Encrypting to Windows DPAPI for current user account (MBYDOMAIN\329114318).
+2026-02-04 15:28:25.551 +02:00 [INF] Writing data to file 'C:\Users\329114318\AppData\Local\ASP.NET\DataProtection-Keys\key-31b3efd9-f5ba-4fd2-8a60-86a832ca0722.xml'.
+2026-02-04 15:28:25.555 +02:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2026-02-04 15:28:25.562 +02:00 [DBG] Reading data from file 'C:\Users\329114318\AppData\Local\ASP.NET\DataProtection-Keys\key-31b3efd9-f5ba-4fd2-8a60-86a832ca0722.xml'.
+2026-02-04 15:28:25.575 +02:00 [DBG] Found key {31b3efd9-f5ba-4fd2-8a60-86a832ca0722}.
+2026-02-04 15:28:25.582 +02:00 [DBG] Considering key {31b3efd9-f5ba-4fd2-8a60-86a832ca0722} with expiration date 2026-05-05 13:28:25Z as default key.
+2026-02-04 15:28:25.591 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-02-04 15:28:25.595 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-02-04 15:28:25.599 +02:00 [DBG] Using key {31b3efd9-f5ba-4fd2-8a60-86a832ca0722} as the default key.
+2026-02-04 15:28:25.602 +02:00 [DBG] Key ring with default key {31b3efd9-f5ba-4fd2-8a60-86a832ca0722} was loaded during application startup.
+2026-02-04 15:28:25.621 +02:00 [DBG] Middleware loaded
+2026-02-04 15:28:25.627 +02:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-02-04 15:28:25.630 +02:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-02-04 15:28:25.779 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 15:28:25.784 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 15:28:25.801 +02:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-02-04 15:28:25.957 +02:00 [INF] Now listening on: https://localhost:7097
+2026-02-04 15:28:25.960 +02:00 [INF] Now listening on: http://localhost:5256
+2026-02-04 15:28:25.962 +02:00 [DBG] Loaded hosting startup assembly BsdUpdated
+2026-02-04 15:28:25.964 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-04 15:28:25.965 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-04 15:28:25.967 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-04 15:28:25.977 +02:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-04 15:28:25.980 +02:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-04 15:28:26.091 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-04 15:28:26.094 +02:00 [INF] Hosting environment: Development
+2026-02-04 15:28:26.096 +02:00 [INF] Content root path: M:\פרויקט בסד\BsdUpdated\BsdUpdated
+2026-02-04 15:28:26.098 +02:00 [DBG] Hosting started
+2026-02-04 15:28:32.318 +02:00 [DBG] Connection id "0HNJ3U559N5ME" accepted.
+2026-02-04 15:28:32.353 +02:00 [DBG] Connection id "0HNJ3U559N5MF" accepted.
+2026-02-04 15:28:32.353 +02:00 [DBG] Connection id "0HNJ3U559N5ME" started.
+2026-02-04 15:28:32.360 +02:00 [DBG] Connection id "0HNJ3U559N5MF" started.
+2026-02-04 15:28:32.453 +02:00 [DBG] Connection id "0HNJ3U559N5ME" received FIN.
+2026-02-04 15:28:32.497 +02:00 [DBG] Connection 0HNJ3U559N5MF established using the following protocol: "Tls13"
+2026-02-04 15:28:32.497 +02:00 [DBG] Connection 0HNJ3U559N5ME established using the following protocol: "Tls13"
+2026-02-04 15:28:32.548 +02:00 [DBG] Connection id "0HNJ3U559N5ME" is closed. The last processed stream ID was 0.
+2026-02-04 15:28:32.554 +02:00 [DBG] Connection id "0HNJ3U559N5ME" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-04 15:28:32.563 +02:00 [DBG] The connection queue processing loop for 0HNJ3U559N5ME completed.
+2026-02-04 15:28:32.572 +02:00 [DBG] Connection id "0HNJ3U559N5ME" stopped.
+2026-02-04 15:28:32.612 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/ - null null
+2026-02-04 15:28:32.809 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/ - 301 0 null 208.0033ms
+2026-02-04 15:28:32.813 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/index.html - null null
+2026-02-04 15:28:32.875 +02:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-02-04 15:28:32.879 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-02-04 15:28:32.907 +02:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-02-04 15:28:32.910 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger-ui.css - null null
+2026-02-04 15:28:32.910 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger-ui-standalone-preset.js - null null
+2026-02-04 15:28:32.910 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-02-04 15:28:32.910 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-04 15:28:32.965 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/index.html - 200 null text/html;charset=utf-8 118.4638ms
+2026-02-04 15:28:32.910 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger-ui-bundle.js - null null
+2026-02-04 15:28:32.921 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_vs/browserLink - null null
+2026-02-04 15:28:33.027 +02:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-02-04 15:28:33.035 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-02-04 15:28:33.035 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-02-04 15:28:33.043 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 132.3247ms
+2026-02-04 15:28:33.045 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-02-04 15:28:33.047 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger-ui.css - 200 144929 text/css 137.2575ms
+2026-02-04 15:28:33.046 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger-ui-standalone-preset.js - 200 312163 text/javascript 136.3976ms
+2026-02-04 15:28:33.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger-ui-bundle.js - 200 1061536 text/javascript 173.3859ms
+2026-02-04 15:28:33.137 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_vs/browserLink - 200 null text/javascript; charset=UTF-8 216.6426ms
+2026-02-04 15:28:33.361 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - null null
+2026-02-04 15:28:33.381 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/favicon-32x32.png - null null
+2026-02-04 15:28:33.387 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-02-04 15:28:33.390 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/favicon-32x32.png - 200 628 image/png 9.789ms
+2026-02-04 15:28:33.394 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.3407ms
+2026-02-04 15:32:55.267 +02:00 [DBG] Connection id "0HNJ3U559N5MG" accepted.
+2026-02-04 15:32:55.277 +02:00 [DBG] Connection id "0HNJ3U559N5MG" started.
+2026-02-04 15:32:55.283 +02:00 [DBG] Connection 0HNJ3U559N5MG established using the following protocol: "Tls13"
+2026-02-04 15:32:55.291 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7097/api/Users/login - null null
+2026-02-04 15:32:55.297 +02:00 [DBG] OPTIONS requests are not supported
+2026-02-04 15:32:55.329 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Users/login'
+2026-02-04 15:32:55.333 +02:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2026-02-04 15:32:55.337 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 15:32:55.340 +02:00 [INF] CORS policy execution successful.
+2026-02-04 15:32:55.342 +02:00 [DBG] The request is a preflight request.
+2026-02-04 15:32:55.345 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7097/api/Users/login - 204 null null 57.2993ms
+2026-02-04 15:32:55.348 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7097/api/Users/login - application/json 47
+2026-02-04 15:32:55.353 +02:00 [DBG] POST requests are not supported
+2026-02-04 15:32:55.356 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Users/login'
+2026-02-04 15:32:55.359 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.UsersController.Login (BsdUpdated)' with route pattern 'api/Users/login' is valid for the request path '/api/Users/login'
+2026-02-04 15:32:55.361 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.UsersController.Login (BsdUpdated)'
+2026-02-04 15:32:55.363 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 15:32:55.365 +02:00 [INF] CORS policy execution successful.
+2026-02-04 15:32:55.978 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 15:32:55.985 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.UsersController.Login (BsdUpdated)'
+2026-02-04 15:32:56.017 +02:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BsdUpdated.DTOs.LoginDto) on controller BsdUpdated.Controllers.UsersController (BsdUpdated).
+2026-02-04 15:32:56.023 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 15:32:56.025 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 15:32:56.028 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 15:32:56.030 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 15:32:56.032 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 15:32:56.036 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.UsersController (BsdUpdated)
+2026-02-04 15:32:56.373 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-02-04 15:32:56.387 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.UsersController (BsdUpdated)
+2026-02-04 15:32:56.405 +02:00 [DBG] Attempting to bind parameter 'dto' of type 'BsdUpdated.DTOs.LoginDto' ...
+2026-02-04 15:32:56.412 +02:00 [DBG] Attempting to bind parameter 'dto' of type 'BsdUpdated.DTOs.LoginDto' using the name '' in request data ...
+2026-02-04 15:32:56.416 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-02-04 15:32:56.425 +02:00 [DBG] Connection id "0HNJ3U559N5MG", Request id "0HNJ3U559N5MG:00000003": started reading request body.
+2026-02-04 15:32:56.428 +02:00 [DBG] Connection id "0HNJ3U559N5MG", Request id "0HNJ3U559N5MG:00000003": done reading request body.
+2026-02-04 15:32:56.440 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'BsdUpdated.DTOs.LoginDto'
+2026-02-04 15:32:56.443 +02:00 [DBG] Done attempting to bind parameter 'dto' of type 'BsdUpdated.DTOs.LoginDto'.
+2026-02-04 15:32:56.445 +02:00 [DBG] Done attempting to bind parameter 'dto' of type 'BsdUpdated.DTOs.LoginDto'.
+2026-02-04 15:32:56.447 +02:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'BsdUpdated.DTOs.LoginDto' ...
+2026-02-04 15:32:56.455 +02:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'BsdUpdated.DTOs.LoginDto'.
+2026-02-04 15:32:56.460 +02:00 [INF] Attempting to log in user with email: 111@example.com
+2026-02-04 15:32:58.652 +02:00 [INF] start Verifying password using PBKDF2.
+2026-02-04 15:32:58.730 +02:00 [INF] Password verified for user with email: 111@example.com
+2026-02-04 15:32:58.733 +02:00 [INF] start Creating JWT token for user with email: 111@example.com
+2026-02-04 15:32:58.818 +02:00 [INF] User logged in successfully with email: 111@example.com
+2026-02-04 15:32:58.826 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 15:32:58.832 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 15:32:58.834 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 15:32:58.835 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 15:32:58.837 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 15:32:58.839 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-04 15:32:58.849 +02:00 [INF] Executed action BsdUpdated.Controllers.UsersController.Login (BsdUpdated) in 2812.0379ms
+2026-02-04 15:32:58.851 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.UsersController.Login (BsdUpdated)'
+2026-02-04 15:32:58.856 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7097/api/Users/login - 200 null application/json; charset=utf-8 3508.0427ms
+2026-02-04 15:33:06.346 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/Donors - null null
+2026-02-04 15:33:06.351 +02:00 [DBG] The request path /api/Donors does not match a supported file type
+2026-02-04 15:33:06.354 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Donors'
+2026-02-04 15:33:06.356 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)' with route pattern 'api/Donors' is valid for the request path '/api/Donors'
+2026-02-04 15:33:06.359 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:06.363 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 15:33:06.365 +02:00 [INF] CORS policy execution successful.
+2026-02-04 15:33:06.367 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 15:33:06.370 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:06.376 +02:00 [INF] Route matched with {action = "GetAllDonors", controller = "Donors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BsdUpdated.DTOs.DonorDto]]] GetAllDonors() on controller BsdUpdated.Controllers.DonorsController (BsdUpdated).
+2026-02-04 15:33:06.380 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 15:33:06.382 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 15:33:06.385 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 15:33:06.388 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 15:33:06.393 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 15:33:06.395 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 15:33:06.402 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 15:33:06.476 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 15:33:06.480 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 15:33:06.482 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 15:33:06.483 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 15:33:06.485 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 15:33:06.488 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BsdUpdated.DTOs.DonorDto, BsdUpdated, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-04 15:33:06.494 +02:00 [INF] Executed action BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated) in 98.6097ms
+2026-02-04 15:33:06.496 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:06.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/Donors - 200 null application/json; charset=utf-8 151.9077ms
+2026-02-04 15:33:10.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/Donors - null null
+2026-02-04 15:33:10.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/Gifts - null null
+2026-02-04 15:33:10.567 +02:00 [DBG] The request path /api/Donors does not match a supported file type
+2026-02-04 15:33:10.569 +02:00 [DBG] The request path /api/Gifts does not match a supported file type
+2026-02-04 15:33:10.570 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Donors'
+2026-02-04 15:33:10.571 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Gifts'
+2026-02-04 15:33:10.572 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)' with route pattern 'api/Donors' is valid for the request path '/api/Donors'
+2026-02-04 15:33:10.573 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)' with route pattern 'api/Gifts' is valid for the request path '/api/Gifts'
+2026-02-04 15:33:10.575 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:10.576 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 15:33:10.578 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 15:33:10.579 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 15:33:10.580 +02:00 [INF] CORS policy execution successful.
+2026-02-04 15:33:10.582 +02:00 [INF] CORS policy execution successful.
+2026-02-04 15:33:10.584 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 15:33:10.584 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 15:33:10.586 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 15:33:10.587 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:10.589 +02:00 [INF] Route matched with {action = "GetAllDonors", controller = "Donors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BsdUpdated.DTOs.DonorDto]]] GetAllDonors() on controller BsdUpdated.Controllers.DonorsController (BsdUpdated).
+2026-02-04 15:33:10.591 +02:00 [INF] Route matched with {action = "GetAllGifts", controller = "Gifts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BsdUpdated.DTOs.GiftDto]]] GetAllGifts() on controller BsdUpdated.Controllers.GiftsController (BsdUpdated).
+2026-02-04 15:33:10.592 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 15:33:10.593 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 15:33:10.595 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 15:33:10.598 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 15:33:10.600 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 15:33:10.601 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 15:33:10.603 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 15:33:10.606 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 15:33:10.608 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 15:33:10.609 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 15:33:10.612 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 15:33:10.614 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.GiftsController (BsdUpdated)
+2026-02-04 15:33:10.618 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 15:33:10.619 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.GiftsController (BsdUpdated)
+2026-02-04 15:33:10.623 +02:00 [INF] start Retrieving all gifts
+2026-02-04 15:33:10.634 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 15:33:10.637 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 15:33:10.639 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 15:33:10.640 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 15:33:10.642 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 15:33:10.644 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BsdUpdated.DTOs.DonorDto, BsdUpdated, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-04 15:33:10.646 +02:00 [INF] Executed action BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated) in 34.2643ms
+2026-02-04 15:33:10.649 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:10.651 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/Donors - 200 null application/json; charset=utf-8 90.3102ms
+2026-02-04 15:33:10.662 +02:00 [INF] Retrieved gifts
+2026-02-04 15:33:10.666 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 15:33:10.670 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 15:33:10.671 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 15:33:10.673 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 15:33:10.674 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 15:33:10.676 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BsdUpdated.DTOs.GiftDto, BsdUpdated, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-04 15:33:10.681 +02:00 [INF] Executed action BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated) in 66.186ms
+2026-02-04 15:33:10.683 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 15:33:10.685 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/Gifts - 200 null application/json; charset=utf-8 124.3489ms
+2026-02-04 15:33:55.877 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/Gifts - null null
+2026-02-04 15:33:55.905 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/Donors - null null
+2026-02-04 15:33:55.912 +02:00 [DBG] The request path /api/Gifts does not match a supported file type
+2026-02-04 15:33:55.917 +02:00 [DBG] The request path /api/Donors does not match a supported file type
+2026-02-04 15:33:55.918 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Gifts'
+2026-02-04 15:33:55.919 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Donors'
+2026-02-04 15:33:55.921 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)' with route pattern 'api/Gifts' is valid for the request path '/api/Gifts'
+2026-02-04 15:33:55.922 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)' with route pattern 'api/Donors' is valid for the request path '/api/Donors'
+2026-02-04 15:33:55.924 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 15:33:55.926 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:55.927 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 15:33:55.928 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 15:33:55.929 +02:00 [INF] CORS policy execution successful.
+2026-02-04 15:33:55.930 +02:00 [INF] CORS policy execution successful.
+2026-02-04 15:33:55.931 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 15:33:55.931 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 15:33:55.932 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 15:33:55.933 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:55.934 +02:00 [INF] Route matched with {action = "GetAllGifts", controller = "Gifts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BsdUpdated.DTOs.GiftDto]]] GetAllGifts() on controller BsdUpdated.Controllers.GiftsController (BsdUpdated).
+2026-02-04 15:33:55.935 +02:00 [INF] Route matched with {action = "GetAllDonors", controller = "Donors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BsdUpdated.DTOs.DonorDto]]] GetAllDonors() on controller BsdUpdated.Controllers.DonorsController (BsdUpdated).
+2026-02-04 15:33:55.937 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 15:33:55.939 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 15:33:55.940 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 15:33:55.942 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 15:33:55.944 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 15:33:55.945 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 15:33:55.947 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 15:33:55.949 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 15:33:55.951 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 15:33:55.952 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 15:33:55.954 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.GiftsController (BsdUpdated)
+2026-02-04 15:33:55.955 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 15:33:55.957 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.GiftsController (BsdUpdated)
+2026-02-04 15:33:55.960 +02:00 [INF] start Retrieving all gifts
+2026-02-04 15:33:55.960 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 15:33:55.963 +02:00 [INF] Retrieved gifts
+2026-02-04 15:33:55.970 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 15:33:55.970 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 15:33:55.973 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 15:33:55.976 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 15:33:55.977 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 15:33:55.978 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 15:33:55.979 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 15:33:55.980 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 15:33:55.981 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 15:33:55.982 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 15:33:55.983 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BsdUpdated.DTOs.DonorDto, BsdUpdated, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-04 15:33:55.984 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BsdUpdated.DTOs.GiftDto, BsdUpdated, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-04 15:33:55.986 +02:00 [INF] Executed action BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated) in 30.639ms
+2026-02-04 15:33:55.993 +02:00 [INF] Executed action BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated) in 39.0267ms
+2026-02-04 15:33:55.994 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 15:33:55.995 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 15:33:55.997 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/Donors - 200 null application/json; charset=utf-8 115.6634ms
+2026-02-04 15:33:55.998 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/Gifts - 200 null application/json; charset=utf-8 121.0379ms
+2026-02-04 15:58:32.615 +02:00 [DBG] Connection id "0HNJ3U559N5MG" received FIN.
+2026-02-04 15:58:32.615 +02:00 [DBG] Connection id "0HNJ3U559N5MF" received FIN.
+2026-02-04 15:58:32.649 +02:00 [DBG] Connection id "0HNJ3U559N5MG" is closed. The last processed stream ID was 13.
+2026-02-04 15:58:32.709 +02:00 [DBG] The connection queue processing loop for 0HNJ3U559N5MG completed.
+2026-02-04 15:58:32.708 +02:00 [DBG] Connection id "0HNJ3U559N5MF" is closed. The last processed stream ID was 17.
+2026-02-04 15:58:32.709 +02:00 [DBG] The connection queue processing loop for 0HNJ3U559N5MF completed.
+2026-02-04 15:58:32.717 +02:00 [DBG] Connection id "0HNJ3U559N5MG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-04 15:58:32.719 +02:00 [DBG] Connection id "0HNJ3U559N5MF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-04 15:58:32.737 +02:00 [DBG] Connection id "0HNJ3U559N5MG" stopped.
+2026-02-04 15:58:32.738 +02:00 [DBG] Connection id "0HNJ3U559N5MF" stopped.
+2026-02-04 16:05:22.761 +02:00 [DBG] Connection id "0HNJ3U559N5MH" accepted.
+2026-02-04 16:05:22.801 +02:00 [DBG] Connection id "0HNJ3U559N5MH" started.
+2026-02-04 16:05:22.838 +02:00 [DBG] Connection 0HNJ3U559N5MH established using the following protocol: "Tls13"
+2026-02-04 16:05:22.848 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/Gifts - null null
+2026-02-04 16:05:22.848 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/Donors - null null
+2026-02-04 16:05:22.858 +02:00 [DBG] The request path /api/Gifts does not match a supported file type
+2026-02-04 16:05:22.861 +02:00 [DBG] The request path /api/Donors does not match a supported file type
+2026-02-04 16:05:22.862 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Gifts'
+2026-02-04 16:05:22.863 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Donors'
+2026-02-04 16:05:22.864 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)' with route pattern 'api/Gifts' is valid for the request path '/api/Gifts'
+2026-02-04 16:05:22.866 +02:00 [DBG] Endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)' with route pattern 'api/Donors' is valid for the request path '/api/Donors'
+2026-02-04 16:05:22.867 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 16:05:22.868 +02:00 [DBG] Request matched endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 16:05:22.870 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 16:05:22.870 +02:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2026-02-04 16:05:22.871 +02:00 [INF] CORS policy execution successful.
+2026-02-04 16:05:22.873 +02:00 [INF] CORS policy execution successful.
+2026-02-04 16:05:22.874 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 16:05:22.874 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-04 16:05:22.876 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 16:05:22.877 +02:00 [INF] Executing endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 16:05:22.878 +02:00 [INF] Route matched with {action = "GetAllGifts", controller = "Gifts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BsdUpdated.DTOs.GiftDto]]] GetAllGifts() on controller BsdUpdated.Controllers.GiftsController (BsdUpdated).
+2026-02-04 16:05:22.879 +02:00 [INF] Route matched with {action = "GetAllDonors", controller = "Donors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BsdUpdated.DTOs.DonorDto]]] GetAllDonors() on controller BsdUpdated.Controllers.DonorsController (BsdUpdated).
+2026-02-04 16:05:22.881 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 16:05:22.882 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-04 16:05:22.884 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 16:05:22.885 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-04 16:05:22.886 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 16:05:22.888 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-04 16:05:22.890 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 16:05:22.891 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-04 16:05:22.893 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 16:05:22.895 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-04 16:05:22.896 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.GiftsController (BsdUpdated)
+2026-02-04 16:05:22.897 +02:00 [DBG] Executing controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 16:05:22.900 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.GiftsController (BsdUpdated)
+2026-02-04 16:05:22.901 +02:00 [DBG] Executed controller factory for controller BsdUpdated.Controllers.DonorsController (BsdUpdated)
+2026-02-04 16:05:22.902 +02:00 [INF] start Retrieving all gifts
+2026-02-04 16:05:22.998 +02:00 [INF] Retrieved gifts
+2026-02-04 16:05:23.001 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 16:05:23.006 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 16:05:23.007 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 16:05:23.010 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 16:05:23.011 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 16:05:23.052 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-04 16:05:23.054 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BsdUpdated.DTOs.GiftDto, BsdUpdated, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-04 16:05:23.056 +02:00 [DBG] No information found on request to perform content negotiation.
+2026-02-04 16:05:23.058 +02:00 [INF] Executed action BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated) in 162.1018ms
+2026-02-04 16:05:23.059 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-04 16:05:23.062 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.GiftsController.GetAllGifts (BsdUpdated)'
+2026-02-04 16:05:23.063 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-04 16:05:23.064 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/Gifts - 200 null application/json; charset=utf-8 216.1486ms
+2026-02-04 16:05:23.065 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-04 16:05:23.069 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BsdUpdated.DTOs.DonorDto, BsdUpdated, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-04 16:05:23.071 +02:00 [INF] Executed action BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated) in 173.748ms
+2026-02-04 16:05:23.073 +02:00 [INF] Executed endpoint 'BsdUpdated.Controllers.DonorsController.GetAllDonors (BsdUpdated)'
+2026-02-04 16:05:23.075 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/Donors - 200 null application/json; charset=utf-8 227.2013ms
+2026-02-04 16:28:32.479 +02:00 [DBG] Connection id "0HNJ3U559N5MH" received FIN.
+2026-02-04 16:28:32.484 +02:00 [DBG] Connection id "0HNJ3U559N5MH" is closed. The last processed stream ID was 3.
+2026-02-04 16:28:32.491 +02:00 [DBG] The connection queue processing loop for 0HNJ3U559N5MH completed.
+2026-02-04 16:28:32.498 +02:00 [DBG] Connection id "0HNJ3U559N5MH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-04 16:28:32.503 +02:00 [DBG] Connection id "0HNJ3U559N5MH" stopped.
+2026-02-04 19:01:01.800 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 19:01:01.811 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 19:01:01.814 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 19:21:37.763 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 19:21:37.765 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 19:21:37.767 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 19:21:37.770 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 19:21:37.772 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 19:24:29.930 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 19:24:29.936 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 19:24:29.938 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 19:24:29.939 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 19:52:40.343 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 19:52:40.346 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 19:52:40.348 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 19:52:40.350 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 19:52:40.352 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 19:54:39.777 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 19:54:39.779 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 19:54:39.779 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 19:54:39.782 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 20:08:31.943 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 20:08:31.945 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 20:08:31.948 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 20:08:31.950 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-04 20:08:31.952 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 20:09:08.651 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 20:09:08.654 +02:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-04 20:09:08.654 +02:00 [DBG] Config reload token fired. Checking for changes...
+2026-02-04 20:09:08.656 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.

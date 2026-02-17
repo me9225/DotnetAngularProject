@@ -1,0 +1,36 @@
+<div class="manager-container">
+  <!-- Navbar תמיד בעליון -->
+  <div class="navbar-section">
+    <h1>ברוך הבא למערכת הניהול</h1>
+    <p-menubar [model]="items" />
+  </div>
+
+  <!-- תוכן דינמי - משתנה לפי בחירה -->
+  <div class="content-section">
+    <!-- דף הבית -->
+    <div *ngIf="selectedComponent === 'home'" class="home-content">
+      <h2>דף הבית</h2>
+      <p>בחר אחת מהאפשרויות בתפריט כדי להתחיל ניהול</p>
+    </div>
+
+    <!-- ניהול תורמים -->
+    <div *ngIf="selectedComponent === 'donors'">
+      <app-donor-manage></app-donor-manage>
+    </div>
+
+    <!-- ניהול מתנות -->
+    <div *ngIf="selectedComponent === 'gifts'">
+      <app-gift-manage></app-gift-manage>
+    </div>
+
+    <!-- ניהול כרטיסים -->
+    <div *ngIf="selectedComponent === 'cards'">
+      <app-cards-manage></app-cards-manage>
+    </div>
+
+    <!-- הגרלת מתנות -->
+    <div *ngIf="selectedComponent === 'random'">
+      <app-random></app-random>
+    </div>
+  </div>
+</div>

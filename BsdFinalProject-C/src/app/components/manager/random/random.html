@@ -1,0 +1,30 @@
+<div class="container">
+
+   <!-- כפתור למחיקת כל הזוכים -->
+    <div class="button-container">
+    <button pButton type="button" label="מחק את כל הזוכים" icon="pi pi-trash" (click)="deleteAllWinners()" class="p-button-success"></button>
+    </div>
+
+   <p-table [value]="gifts">
+     <ng-template pTemplate="header">
+       <tr>
+         <th>שם המתנה</th>
+         <th>מספר רוכשים</th>
+         <th>הגרל זוכה</th>
+         <th>הזוכה</th>
+       </tr>
+     </ng-template>
+
+     <ng-template pTemplate="body" let-gift>
+       <tr>
+         <td>{{ gift.name }}</td>
+         <td>{{ buyersCount(gift) }}</td>
+         <td>
+           <button *ngIf="gift.winnerName==' ' || gift.winnerName==''" pButton type="button" label="הגרל זוכה" icon="pi pi-gift" (click)="drawWinner(gift)" class="p-button-info"> </button>
+         </td>
+         <td *ngIf="gift.winnerName && gift.winnerName != ' '">הזוכה הוא: {{ gift.winnerName }}</td>
+         <td *ngIf="!gift.winnerName || gift.winnerName != ' '">עדיין אין זוכה</td>
+       </tr>
+     </ng-template>
+   </p-table>
+ </div>

@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D1\u05E1\u05D3\\New folder (2)\\BsdUpdated\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB0B1C8-A115-4FAD-BDEE-59D87D712921}|BsdUpdated\\BsdUpdated.csproj|m:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D1\u05E1\u05D3\\new folder (2)\\bsdupdated\\bsdupdated\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABB0B1C8-A115-4FAD-BDEE-59D87D712921}|BsdUpdated\\BsdUpdated.csproj|solutionrelative:bsdupdated\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB0B1C8-A115-4FAD-BDEE-59D87D712921}|BsdUpdated\\BsdUpdated.csproj|m:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D1\u05E1\u05D3\\new folder (2)\\bsdupdated\\bsdupdated\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB0B1C8-A115-4FAD-BDEE-59D87D712921}|BsdUpdated\\BsdUpdated.csproj|solutionrelative:bsdupdated\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "M:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D1\u05E1\u05D3\\New folder (2)\\BsdUpdated\\BsdUpdated\\appsettings.json",
+              "RelativeDocumentMoniker": "BsdUpdated\\appsettings.json",
+              "ToolTip": "M:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D1\u05E1\u05D3\\New folder (2)\\BsdUpdated\\BsdUpdated\\appsettings.json",
+              "RelativeToolTip": "BsdUpdated\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-16T11:49:56.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "M:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D1\u05E1\u05D3\\New folder (2)\\BsdUpdated\\BsdUpdated\\Program.cs",
+              "RelativeDocumentMoniker": "BsdUpdated\\Program.cs",
+              "ToolTip": "M:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D1\u05E1\u05D3\\New folder (2)\\BsdUpdated\\BsdUpdated\\Program.cs",
+              "RelativeToolTip": "BsdUpdated\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T11:35:21.303Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

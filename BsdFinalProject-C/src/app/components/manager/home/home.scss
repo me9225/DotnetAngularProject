@@ -1,0 +1,458 @@
+.manager-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  font-family: Arial, sans-serif;
+  color: #f1f5f9;
+}
+
+.navbar-section {
+  width: 100%;
+  padding: 30px 20px;
+  background: linear-gradient(90deg, #111827, #1f2937);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #22d3ee;
+  text-align: center;
+}
+
+.navbar-section h1 {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:host ::ng-deep .p-menubar {
+  background: transparent !important;
+  border: none !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+:host ::ng-deep .p-menubar-root-list {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 25px;
+}
+
+:host ::ng-deep .p-menubar-item-link {
+  padding: 12px 25px !important;
+  border-radius: 30px !important;
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+  font-weight: 600;
+  transition: all 0.3s ease !important;
+}
+
+:host ::ng-deep .p-menubar-item-link:hover {
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+  color: #0f172a !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(34, 211, 238, 0.4);
+}
+
+:host ::ng-deep .p-menubar-button {
+  display: none !important;
+}
+
+.content-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  
+}
+
+.home-content {
+  background: #111827;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  width: 100%;
+}
+
+.home-content h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #facc15, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+}
+
+.home-content::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url("https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ===== NAVBAR CONTAINER ===== */
+
+.navbar-section {
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* למרכז את ה-menubar */
+
+.navbar-section p-menubar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== PrimeNG Overrides ===== */
+
+:host ::ng-deep .p-menubar {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* שורה מאוזנת תמיד */
+
+:host ::ng-deep .p-menubar-root-list {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 20px !important;
+}
+
+/* גודל קבוע לכפתורים */
+
+:host ::ng-deep .p-menubar-item-link {
+  width: 160px !important;
+  height: 50px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* לבטל כפתור המבורגר במסכים קטנים */
+
+:host ::ng-deep .p-menubar-button {
+  display: none !important;
+}
+/* לבטל את הרקע הלבן שמופיע במסך קטן */
+
+:host ::ng-deep .p-menubar {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* לבטל רקע של הקונטיינר הפנימי */
+
+:host ::ng-deep .p-menubar-root-list {
+  background: transparent !important;
+}
+
+/* לבטל overlay במצב רספונסיבי */
+
+:host ::ng-deep .p-menubar-overlay {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* לבטל panel פנימי של mobile */
+
+:host ::ng-deep .p-menubar-mobile-active {
+  background: transparent !important;
+}
+/* ביטול המסגרת הלבנה במסך קטן */
+
+:host ::ng-deep .p-menubar {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* לבטל border פנימי */
+
+:host ::ng-deep .p-menubar-root-list {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* לבטל מסגרת של מצב רספונסיבי */
+
+:host ::ng-deep .p-menubar-overlay {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* לבטל outline אוטומטי */
+
+:host ::ng-deep .p-menubar-item-link {
+  outline: none !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+}
+/* ביטול רקע לבן במצב hover */
+
+:host ::ng-deep .p-menubar-item-link:hover {
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+  color: #0f172a !important;
+  box-shadow: 0 8px 20px rgba(34, 211, 238, 0.4) !important;
+}
+
+/* ביטול רקע לבן פנימי ש-PrimeNG מוסיף */
+
+:host ::ng-deep .p-menuitem-link:hover {
+  background: transparent !important;
+}
+
+/* ביטול focus שיוצר רקע לבן */
+
+:host ::ng-deep .p-menubar-item-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+}
+
+/* אם עדיין מופיע panel פנימי */
+
+:host ::ng-deep .p-menuitem {
+  background: transparent !important;
+}
+/* לבטל לגמרי את אפקט ה-floating שמוסיף PrimeNG */
+
+:host ::ng-deep .p-menubar-item {
+  background: transparent !important;
+}
+
+:host ::ng-deep .p-menubar-item.p-highlight {
+  background: transparent !important;
+}
+
+:host ::ng-deep .p-menubar-item-link {
+  background: transparent !important;
+  position: relative !important;
+  z-index: 1 !important;
+  transition: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* לבטל transform שמרים את הכפתור */
+
+:host ::ng-deep .p-menubar-item-link:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+  color: #0f172a !important;
+}
+
+/* לבטל pseudo element פנימי */
+
+:host ::ng-deep .p-menubar-item::before,
+:host ::ng-deep .p-menubar-item::after {
+  display: none !important;
+}
+
+/* לבטל focus שיוצר רקע מאחור */
+
+:host ::ng-deep .p-menubar-item-link:focus,
+:host ::ng-deep .p-menubar-item-link:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+}
+/* הפתרון לפינות הלבנות */
+
+:host ::ng-deep .p-menubar-item-link {
+  width: 160px !important;
+  height: 50px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+
+  border-radius: 12px !important; /* במקום 30px */
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+
+  overflow: hidden !important; /* קריטי למניעת פינות לבנות */
+}
+
+/* hover בלי גלישה מחוץ למסגרת */
+
+:host ::ng-deep .p-menubar-item-link:hover {
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+  color: #0f172a !important;
+  box-shadow: 0 8px 20px rgba(34, 211, 238, 0.4) !important;
+  transform: none !important;
+}
+
+
+
+/* פתרון סופי לפינות הלבנות – ביטול שכבת רקע פנימית */
+
+:host ::ng-deep .p-menubar-item {
+  background: transparent !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+:host ::ng-deep .p-menubar-item-link {
+  width: 160px !important;
+  height: 50px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+
+  border-radius: 12px !important;
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* מבטל שכבת before/after שגורמת לפינות לבנות */
+
+:host ::ng-deep .p-menubar-item-link::before,
+:host ::ng-deep .p-menubar-item-link::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* hover נקי לחלוטין */
+
+:host ::ng-deep .p-menubar-item-link:hover {
+  background: linear-gradient(90deg, #22d3ee, #a78bfa) !important;
+  color: #0f172a !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+/* כשהמסך גדול – למרכז את כל התפריט אופקית */
+
+@media (min-width: 992px) {
+
+  .navbar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-section p-menubar {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  :host ::ng-deep .p-menubar {
+    width: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  :host ::ng-deep .p-menubar-root-list {
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+}
+/* כשהמסך קטן – להגדיל את גובה הקומפוננטה העליונה */
+
+@media (max-width: 768px) {
+
+  .navbar-section {
+    padding: 40px 20px 60px 20px; /* יותר גובה */
+  }
+
+  /* לאפשר לכפתורים לרדת שורה במקום לגלוש */
+
+  :host ::ng-deep .p-menubar-root-list {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  /* להגדיל מרווח אנכי בין שורות */
+
+  :host ::ng-deep .p-menubar-item {
+    margin-bottom: 10px !important;
+  }
+
+}
+/* פתרון מוחלט לגלישת הכפתורים במסך קטן */
+
+@media (max-width: 768px) {
+
+  .navbar-section {
+    padding: 40px 20px;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  /* לאפשר לתפריט לתפוס גובה אמיתי */
+
+  :host ::ng-deep .p-menubar {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* שבירת שורה אמיתית במקום גלישה */
+
+  :host ::ng-deep .p-menubar-root-list {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  /* ביטול nowrap שגרם לגלישה */
+
+  :host ::ng-deep .p-menubar-root-list {
+    flex-wrap: wrap !important;
+  }
+
+}
+/* שהתוכן התחתון ימלא 95% מרוחב הדף */
+
+.content-section {
+  flex: 1;
+  width: 95%;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* לא רק באמצע אנכית */
+  padding: 40px 0;
+}
+
+/* שגם הקומפוננטות הפנימיות יתפרסו בהתאם */
+
+.content-section > div {
+  width: 100%;
+  max-width: 100%;
+}
+

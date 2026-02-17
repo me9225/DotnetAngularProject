@@ -1,0 +1,6 @@
+@BsdUpdated_HostAddress = http://localhost:5255
+
+GET {{BsdUpdated_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
